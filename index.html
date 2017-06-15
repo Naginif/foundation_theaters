@@ -3,207 +3,78 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
+    <title>Foundation Theatres</title>
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/newStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
-    
+    <nav class='top-bar' data-topbar role="navigation">
+                <ul class='title-area'>
+                  <li class='name'>
+                    <a href='index.html' class='title-area' id='brand'>Foundation Theatres</a>
+                  </li>            
+                  <li class="toggle-topbar menu-icon">
+                    <a href="#"><span>Menu</span></a>
+                  </li>
+                </ul>
+                <section class='top-bar-section'>
+            <ul class='right'>
+                <li><a href='now-showing.html'>Now showing</a></li>
+                <li><a href='booking.html'>Booking</a></li>
+                <li><a href='coming-soon.html'>Coming soon</a></li>
+            </ul>
+        </section>
+    </nav>`
     <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 medium-push-2 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 medium-pull-2 columns">
-              <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>        
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
+      <div class="large-12 medium-12 small-12 columns">
         <!-- Grid Example -->
+        <div class="row">
+          <div class="large-8 medium-8 small-12 columns">
+            <div class="callout panel">
+              <h1><strong>Now Showing</strong></h1>
+                <ul class="example-orbit" data-orbit>
+                  <li>
+                    <img src="https://pixy.org/images/placeholder.png"  alt="slide 1" />
+                      <div class="orbit-caption">
+                        Caption One.
+                      </div>
+                  </li>
+                  <li class="active">
+                    <img src="https://pixy.org/images/placeholder.png"  alt="slide 2" />
+                      <div class="orbit-caption">
+                        Caption Two.
+                      </div>
+                  </li>
+                  <li>
+                    <img src="https://pixy.org/images/placeholder.png"  alt="slide 3" />
+                      <div class="orbit-caption">
+                        Caption Three.
+                      </div>
+                  </li>
+                  <li>
+                    <img src="https://pixy.org/images/placeholder.png"  alt="slide 3" />
+                      <div class="orbit-caption">
+                        Caption Four.
+                      </div>
+                  </li>
+                </ul>
+            </div>
+          </div>
+          <div class="large-4 medium-4 small-12 columns">
+            <div class="callout panel">
+              <h1><strong>About</strong></h1>
+                <p>Where does it come from?
 
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                </p>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
         <hr />
-                
-        		<h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-			<div class="row">
-				<div class="large-12 columns">
-				<label>Payment Method</label>
-				<select>
-                <option value="visa">Visa</option>
-                <option value="paypal">PayPal</option>
-                <option value="mastercard">MasterCard</option>
-				</select>
-				</div>
-			</div>
-			<div class="row">
-				<div class="large-12 columns">
-				<label>Card Number</label>
-				<input type="tel" name = "card number" id = "card number" required/>
-				</div>
-			</div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Expiration Month</label>
-              <input type="number" min="1" max="12" value="1" step="1" />
-            </div>
-            <div class="large-4 medium-4 columns">
-				<label>Year</label>
-              <input type="number" min="2017" max="2025" value="2017" step="1" />
-            </div>
-			<div class="large-4 medium-4 columns">
-				<label>CCV</label>
-              <input type="tel" />
-            </div>
-          </div>
-		  
-          <div class="row">
-            <div class="large-6 columns">
-              <label>First Name</label>
-              <input type="text" name="firstName" id="firstName"/>
-            </div>
-			<div class="large-6 columns">
-              <label>Last Name</label>
-              <input type="text" name="lastName" id="lastName"/>
-            </div>
-          </div>
-		  <div class="row">
-            <div class="large-12 columns">
-              <label>Billing Address</label>
-              <input type="text" name="billingAddress1" id="billingAddress1"/>
-            </div>
-          </div>
-		  <div class="row">
-            <div class="large-12 columns">
-              <label>Billing Address2</label>
-              <input type="text" name="billingAddress2" id="billingAddress2"/>
-            </div>
-          </div>
-		  <div class="row">
-            <div class="large-12 columns">
-              <label>City</label>
-              <input type="text" name="city" id="city"/>
-            </div>
-          </div>
-		  <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>State</label>
-              <input type="text" name="state" id="state"/>
-            </div>
-			<div class="large-4 medium-4 columns">
-              <label>Zip Code</label>
-              <input type="text" name="zip" id="zip"/>
-            </div>
-			<div class="large-4 medium-4 columns">
-              <label>Country</label>
-              <input type="text" name="country" id="country"/>
-            </div>
-          </div>
-		  <div class="row">
-			<div class="large-offset-10 medium-offset-9 columns"/>
-            <div class="large-4 medium-4 columns">
-              <input type="submit" value="Submit"/>
-            </div>
-          </div>
-		  
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>     
-
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-        <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
-        </div>
       </div>
     </div>
     
