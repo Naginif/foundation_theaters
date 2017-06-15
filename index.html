@@ -88,46 +88,88 @@
         
         <hr />
                 
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
+        		<h5>We bet you&rsquo;ll need a form somewhere:</h5>
         <form>
+			<div class="row">
+				<div class="large-12 columns">
+				<label>Payment Method</label>
+				<select>
+                <option value="visa">Visa</option>
+                <option value="paypal">PayPal</option>
+                <option value="mastercard">MasterCard</option>
+				</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-12 columns">
+				<label>Card Number</label>
+				<input type="tel" name = "card number" id = "card number" required/>
+				</div>
+			</div>
           <div class="row">
+            <div class="large-4 medium-4 columns">
+              <label>Expiration Month</label>
+              <input type="number" min="1" max="12" value="1" step="1" />
+            </div>
+            <div class="large-4 medium-4 columns">
+				<label>Year</label>
+              <input type="number" min="2017" max="2025" value="2017" step="1" />
+            </div>
+			<div class="large-4 medium-4 columns">
+				<label>CCV</label>
+              <input type="tel" />
+            </div>
+          </div>
+		  
+          <div class="row">
+            <div class="large-6 columns">
+              <label>First Name</label>
+              <input type="text" name="firstName" id="firstName"/>
+            </div>
+			<div class="large-6 columns">
+              <label>Last Name</label>
+              <input type="text" name="lastName" id="lastName"/>
+            </div>
+          </div>
+		  <div class="row">
             <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
+              <label>Billing Address</label>
+              <input type="text" name="billingAddress1" id="billingAddress1"/>
             </div>
           </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
-                </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
+		  <div class="row">
             <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
+              <label>Billing Address2</label>
+              <input type="text" name="billingAddress2" id="billingAddress2"/>
             </div>
           </div>
+		  <div class="row">
+            <div class="large-12 columns">
+              <label>City</label>
+              <input type="text" name="city" id="city"/>
+            </div>
+          </div>
+		  <div class="row">
+            <div class="large-4 medium-4 columns">
+              <label>State</label>
+              <input type="text" name="state" id="state"/>
+            </div>
+			<div class="large-4 medium-4 columns">
+              <label>Zip Code</label>
+              <input type="text" name="zip" id="zip"/>
+            </div>
+			<div class="large-4 medium-4 columns">
+              <label>Country</label>
+              <input type="text" name="country" id="country"/>
+            </div>
+          </div>
+		  <div class="row">
+			<div class="large-offset-10 medium-offset-9 columns"/>
+            <div class="large-4 medium-4 columns">
+              <input type="submit" value="Submit"/>
+            </div>
+          </div>
+		  
           <div class="row">
             <div class="large-6 medium-6 columns">
               <label>Choose Your Favorite</label>
