@@ -29,9 +29,9 @@
     </nav>`
     <div class="row">
       	<h5>Give us money to watch a movie</h5>
-        <form>
+        <form data-abide>
 			<div class="row">
-				<div class="large-12 columns">
+				<div class="large-4 small-4 columns">
 				<label>Payment Method</label>
 				<select>
                 <option value="visa">Visa</option>
@@ -42,8 +42,9 @@
 			</div>
 			<div class="row">
 				<div class="large-12 columns">
-				<label>Card Number</label>
-				<input type="tel" name = "card number" id = "card number" required/>
+				<label>Card/Account Number</label>
+				<input type="card" name = "card number" id = "card number" required/>
+				<small class="error">Bad card/account number</small>
 				</div>
 			</div>
           <div class="row">
@@ -57,54 +58,58 @@
             </div>
 			<div class="large-4 medium-4 columns">
 				<label>CCV</label>
-              <input type="tel" />
+              <input type="cvv" id="cvv" required/>
+			  <small class="error">Bad CVV</small>
             </div>
           </div>
 		  
           <div class="row">
             <div class="large-6 columns">
               <label>First Name</label>
-              <input type="text" name="firstName" id="firstName"/>
+              <input type="alpha" name="firstName" id="firstName" required/>
+			  <small class="error">Error</small>
             </div>
 			<div class="large-6 columns">
               <label>Last Name</label>
-              <input type="text" name="lastName" id="lastName"/>
+              <input type="alpha" name="lastName" id="lastName" required/>
+			  <small class="error">Error</small>
             </div>
           </div>
 		  <div class="row">
             <div class="large-12 columns">
               <label>Billing Address</label>
-              <input type="text" name="billingAddress1" id="billingAddress1"/>
+              <input type="alpha_numeric" name="billingAddress1" id="billingAddress1" required/>
             </div>
           </div>
 		  <div class="row">
             <div class="large-12 columns">
               <label>Billing Address2</label>
-              <input type="text" name="billingAddress2" id="billingAddress2"/>
+              <input type="alpha_numeric" name="billingAddress2" id="billingAddress2"/>
             </div>
           </div>
 		  <div class="row">
             <div class="large-12 columns">
               <label>City</label>
-              <input type="text" name="city" id="city"/>
+              <input type="alpha" name="city" id="city" required/>
             </div>
           </div>
 		  <div class="row">
             <div class="large-4 medium-4 columns">
               <label>State</label>
-              <input type="text" name="state" id="state"/>
+              <input type="alpha" name="state" id="state" required/>
             </div>
 			<div class="large-4 medium-4 columns">
               <label>Zip Code</label>
-              <input type="text" name="zip" id="zip"/>
+              <input type="number" name="zip" id="zip" required/>
             </div>
 			<div class="large-4 medium-4 columns">
               <label>Country</label>
-              <input type="text" name="country" id="country"/>
+              <input type="alpha" name="country" id="country" required/>
             </div>
           </div>
 		  <div class="row">
             <div class="large-10 medium-4 columns">
+			<div class="large-offset-10 medium-offset-9 columns" required/>            <div class="large-4 medium-4 columns">
               <input type="submit" value="Submit"/>
             </div>
           </div>
