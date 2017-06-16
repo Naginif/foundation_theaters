@@ -43,7 +43,7 @@
 			<div class="row">
 				<div class="large-12 columns">
 				<label>Card/Account Number</label>
-				<input type="card" name = "card number" id = "card number" required/>
+				<input type="text" pattern="card" name = "card number" id = "card number" required/>
 				<small class="error">Bad card/account number</small>
 				</div>
 			</div>
@@ -58,7 +58,7 @@
             </div>
 			<div class="large-4 medium-4 columns">
 				<label>CCV</label>
-              <input type="cvv" id="cvv" required/>
+              <input type="text" pattern="cvv" id="cvv" required/>
 			  <small class="error">Bad CVV</small>
             </div>
           </div>
@@ -66,50 +66,50 @@
           <div class="row">
             <div class="large-6 columns">
               <label>First Name</label>
-              <input type="alpha" name="firstName" id="firstName" required/>
+              <input type="text" pattern="alpha" name="firstName" id="firstName" required/>
 			  <small class="error">Error</small>
             </div>
 			<div class="large-6 columns">
               <label>Last Name</label>
-              <input type="alpha" name="lastName" id="lastName" required/>
+              <input type="text" pattern="alpha" name="lastName" id="lastName" required/>
 			  <small class="error">Error</small>
             </div>
           </div>
 		  <div class="row">
             <div class="large-12 columns">
               <label>Billing Address</label>
-              <input type="alpha_numeric" name="billingAddress1" id="billingAddress1" required/>
+              <input type="text" pattern="alpha_numeric" name="billingAddress1" id="billingAddress1" required/>
             </div>
           </div>
 		  <div class="row">
             <div class="large-12 columns">
               <label>Billing Address2</label>
-              <input type="alpha_numeric" name="billingAddress2" id="billingAddress2"/>
+              <input type="text" pattern="alpha_numeric" name="billingAddress2" id="billingAddress2"/>
             </div>
           </div>
 		  <div class="row">
             <div class="large-12 columns">
               <label>City</label>
-              <input type="alpha" name="city" id="city" required/>
+              <input type="text" pattern="alpha" name="city" id="city" required/>
             </div>
           </div>
 		  <div class="row">
             <div class="large-4 medium-4 columns">
               <label>State</label>
-              <input type="alpha" name="state" id="state" required/>
+              <input type="text" pattern="alpha" name="state" id="state" required/>
             </div>
 			<div class="large-4 medium-4 columns">
               <label>Zip Code</label>
-              <input type="number" name="zip" id="zip" required/>
+              <input type="text" pattern="number" name="zip" id="zip" required/>
             </div>
 			<div class="large-4 medium-4 columns">
               <label>Country</label>
-              <input type="alpha" name="country" id="country" required/>
+              <input type="text" pattern="alpha" name="country" id="country" required/>
             </div>
           </div>
 		  <div class="row">
             <div class="large-10 medium-4 columns">
-			<div class="large-offset-10 medium-offset-9 columns" required/>            <div class="large-4 medium-4 columns">
+            <div class="large-4 medium-4 columns">
               <input type="submit" value="Submit"/>
             </div>
           </div>
