@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="css/newStyle.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <script src="js/vendor/modernizr.js"></script>
+	<style>
+		#gallery columns {
+			margin: 2em;
+			padding: 2em;
+		}
+	</style>
 </head>
 
 <body>
@@ -28,30 +34,33 @@
                 <li><a href='coming-soon.html' class='active'>Coming soon</a></li>
             </ul>
         </section>
-    </nav>`
-
-    <ul class="small-block-grid-4">
-        <li>
-           <a href="#" data-reveal-id="firstModal">
-                <img class="th" src="img/bookHenry.jpg"  alt="slide 1" />
-            </a>
-        </li>
-        <li>
-           <a href="#" data-reveal-id="secondModal">
-                <img class="th" src="img/cars3.jpg"  alt="slide 1" />
-            </a>
-        </li>
-        <li>
-           <a href="#" data-reveal-id="thirdModal">
-                <img class="th" src="img/rough-night.jpg"  alt="slide 1" />
-            </a>
-        </li>
-        <li>
-           <a href="#" data-reveal-id="fourthModal">
-                <img class="th" src="img/all-eyez.jpg"  alt="slide 1" />
-            </a>
-        </li>
-    </ul>
+    </nav>
+	<div class='row' id='gallery'>
+		
+		<div class="small-12 medium-6 large-3 columns">
+		   <a href="#" data-reveal-id="secondModal">
+				<img class="th" src="img/cars3.jpg"  alt="slide 1" />
+			</a>
+		</div>
+	
+		<div class="small-12 medium-6 large-3 columns">
+			   <a href="#" data-reveal-id="firstModal">
+					<img class="th" src="img/bookHenry.jpg"  alt="slide 1" />
+				</a>
+		</div>
+			
+		<div class="small-12 medium-6 large-3 columns">
+			<a href="#" data-reveal-id="thirdModal">
+				<img class="th" src="img/rough-night.jpg"  alt="slide 1" />
+			</a>
+		</div>
+			
+		<div class="small-12 medium-6 large-3 columns">
+		   <a href="#" data-reveal-id="fourthModal">
+				<img class="th" src="img/all-eyez.jpg"  alt="slide 1" />
+			</a>
+		</div>
+	</div>
 
     <div id="firstModal" class="reveal-modal" data-reveal aria-labelledby="firstModalTitle" aria-hidden="true" role="dialog">
         <div class="row">
