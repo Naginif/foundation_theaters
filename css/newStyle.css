@@ -9,7 +9,34 @@ body {
   margin: 0;
   padding: 0;
   position: relative; }
+  
+nav, nav a {
+	background-color: #1B1E3D !important;
+}	
+  
+nav li.name{
+	display: flex;
+	align-items: center;
+	padding: 1em;
+}
 
+nav #brand {
+	color: white;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+nav .right a {
+	color: #989bbc !important;
+}
+
+nav a.active {
+	color: white !important;
+	font-weight: bold;
+	/*background-color: #2e325b !important;*/
+	/*border-bottom: .5em solid white;*/
+}
+  
 /* Panels */
 .panel {
   border-style: solid;
